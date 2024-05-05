@@ -25,61 +25,60 @@ public class Principal {
                 if(opcion == 11){
                     break;
                 }
-               String abreviaturaMoneda;
+                String abreviaturaMoneda;
                 buscarMoneda buscarmoneda=new buscarMoneda();
                 calcularMoneda calcularmoneda = new calcularMoneda();
                 Moneda monedaBuscada;
                 switch (opcion) {
-
                     case 1:
-                        abreviaturaMoneda="PEN";
-                         monedaBuscada = buscarmoneda.buscar(abreviaturaMoneda);
-                        calcularmoneda.calcularDolaresAMonedas(monedaBuscada.getValor(),abreviaturaMoneda);
+                        abreviaturaMoneda = "PEN";
+                        monedaBuscada = buscarmoneda.buscar(abreviaturaMoneda);
+                        calcularmoneda.calcularDolaresAMonedas(monedaBuscada.getValor(), abreviaturaMoneda, "Dolar ===> moneda peruana");
                         break;
                     case 2:
-                        abreviaturaMoneda="PEN";
+                        abreviaturaMoneda = "PEN";
                         monedaBuscada = buscarmoneda.buscar(abreviaturaMoneda);
-                        calcularmoneda.calcularMonedasADolares(monedaBuscada.getValor(),abreviaturaMoneda);
+                        calcularmoneda.calcularMonedasADolares(monedaBuscada.getValor(), abreviaturaMoneda, "moneda peruana ====> Dolar");
                         break;
                     case 3:
-                        abreviaturaMoneda="ARS";
+                        abreviaturaMoneda = "ARS";
                         monedaBuscada = buscarmoneda.buscar(abreviaturaMoneda);
-                        calcularmoneda.calcularDolaresAMonedas(monedaBuscada.getValor(),abreviaturaMoneda);
+                        calcularmoneda.calcularDolaresAMonedas(monedaBuscada.getValor(), abreviaturaMoneda, "Dolar ===> peso argentino");
                         break;
                     case 4:
-                        abreviaturaMoneda="ARS";
+                        abreviaturaMoneda = "ARS";
                         monedaBuscada = buscarmoneda.buscar(abreviaturaMoneda);
-                        calcularmoneda.calcularMonedasADolares(monedaBuscada.getValor(),abreviaturaMoneda);
+                        calcularmoneda.calcularMonedasADolares(monedaBuscada.getValor(), abreviaturaMoneda, "Peso argentino ====> Dolar");
                         break;
                     case 5:
-                        abreviaturaMoneda="BRL";
+                        abreviaturaMoneda = "BRL";
                         monedaBuscada = buscarmoneda.buscar(abreviaturaMoneda);
-                        calcularmoneda.calcularDolaresAMonedas(monedaBuscada.getValor(),abreviaturaMoneda);
+                        calcularmoneda.calcularDolaresAMonedas(monedaBuscada.getValor(), abreviaturaMoneda, "Dolar ===> real brasileño");
                         break;
                     case 6:
-                        abreviaturaMoneda="BRL";
+                        abreviaturaMoneda = "BRL";
                         monedaBuscada = buscarmoneda.buscar(abreviaturaMoneda);
-                        calcularmoneda.calcularMonedasADolares(monedaBuscada.getValor(),abreviaturaMoneda);
+                        calcularmoneda.calcularMonedasADolares(monedaBuscada.getValor(), abreviaturaMoneda, "Real brasileño ====> Dolar");
                         break;
                     case 7:
-                        abreviaturaMoneda="COP";
+                        abreviaturaMoneda = "COP";
                         monedaBuscada = buscarmoneda.buscar(abreviaturaMoneda);
-                        calcularmoneda.calcularDolaresAMonedas(monedaBuscada.getValor(),abreviaturaMoneda);
+                        calcularmoneda.calcularDolaresAMonedas(monedaBuscada.getValor(), abreviaturaMoneda, "Dolar ===> peso colombiano");
                         break;
                     case 8:
-                        abreviaturaMoneda="COP";
+                        abreviaturaMoneda = "COP";
                         monedaBuscada = buscarmoneda.buscar(abreviaturaMoneda);
-                        calcularmoneda.calcularMonedasADolares(monedaBuscada.getValor(),abreviaturaMoneda);
+                        calcularmoneda.calcularMonedasADolares(monedaBuscada.getValor(), abreviaturaMoneda, "Peso colombiano ====> Dolar");
                         break;
                     case 9:
-                        abreviaturaMoneda="MXN";
+                        abreviaturaMoneda = "MXN";
                         monedaBuscada = buscarmoneda.buscar(abreviaturaMoneda);
-                        calcularmoneda.calcularDolaresAMonedas(monedaBuscada.getValor(),abreviaturaMoneda);
+                        calcularmoneda.calcularDolaresAMonedas(monedaBuscada.getValor(), abreviaturaMoneda, "Dolar ===> peso mexicano");
                         break;
                     case 10:
-                        abreviaturaMoneda="MXN";
+                        abreviaturaMoneda = "MXN";
                         monedaBuscada = buscarmoneda.buscar(abreviaturaMoneda);
-                        calcularmoneda.calcularMonedasADolares(monedaBuscada.getValor(),abreviaturaMoneda);
+                        calcularmoneda.calcularMonedasADolares(monedaBuscada.getValor(), abreviaturaMoneda, "Peso mexicano ====> Dolar");
                         break;
                     default:
                         System.out.println("Ingrese una opcion valida");
@@ -113,5 +112,5 @@ public class Principal {
                                """);
         System.out.println("******************************************************");
     }
-         
+
 }
